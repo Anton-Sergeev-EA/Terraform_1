@@ -1,0 +1,36 @@
+module.vpc_dev.yandex_vpc_network.this: Creating...
+module.vpc_dev.yandex_vpc_network.this: Still creating... [00m10s elapsed]
+module.vpc_dev.yandex_vpc_network.this: Still creating... [00m20s elapsed]
+module.vpc_dev.yandex_vpc_network.this: Creation complete after 22s [id=enpid4sup7u7g7t89hsb]
+module.vpc_dev.yandex_vpc_subnet.this: Creating...
+module.vpc_dev.yandex_vpc_subnet.this: Creation complete after 0s [id=e9b0pvbbfgntt0aqnonh]
+yandex_vpc_security_group.ssh: Creating...
+yandex_vpc_security_group.ssh: Creation complete after 1s [id=enpdfdnhjruhkkhacoeg]
+module.marketing_vm.yandex_compute_instance.vm[0]: Creating...
+module.analytics_vm.yandex_compute_instance.vm[0]: Creating...
+module.analytics_vm.yandex_compute_instance.vm[0]: Still creating... [00m10s elapsed]
+module.marketing_vm.yandex_compute_instance.vm[0]: Still creating... [00m10s elapsed]
+module.marketing_vm.yandex_compute_instance.vm[0]: Still creating... [00m20s elapsed]
+module.analytics_vm.yandex_compute_instance.vm[0]: Still creating... [00m20s elapsed]
+module.analytics_vm.yandex_compute_instance.vm[0]: Still creating... [00m30s elapsed]
+module.marketing_vm.yandex_compute_instance.vm[0]: Still creating... [00m30s elapsed]
+module.marketing_vm.yandex_compute_instance.vm[0]: Still creating... [00m40s elapsed]
+module.analytics_vm.yandex_compute_instance.vm[0]: Still creating... [00m40s elapsed]
+module.marketing_vm.yandex_compute_instance.vm[0]: Creation complete after 45s [id=fhmn81hkif0vgbbsv4ni]
+module.analytics_vm.yandex_compute_instance.vm[0]: Still creating... [00m50s elapsed]
+module.analytics_vm.yandex_compute_instance.vm[0]: Creation complete after 51s [id=fhmifb0ejdjminkbviel]
+
+Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+instances = {
+  "analytics" = {
+    "id" = "fhmifb0ejdjminkbviel"
+    "ip" = "84.201.133.45"
+  }
+  "marketing" = {
+    "id" = "fhmn81hkif0vgbbsv4ni"
+    "ip" = "84.201.135.15"
+  }
+}

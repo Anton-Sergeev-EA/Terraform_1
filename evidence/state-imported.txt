@@ -1,0 +1,46 @@
+$ cat imports.tf
+import {
+  to = module.analytics_vm.yandex_compute_instance.vm[0]
+  id = "fhmifb0ejdjminkbviel"
+}
+
+import {
+  to = module.marketing_vm.yandex_compute_instance.vm[0]
+  id = "fhmn81hkif0vgbbsv4ni"
+}
+
+import {
+  to = module.vpc_dev.yandex_vpc_network.this
+  id = "enpid4sup7u7g7t89hsb"
+}
+
+import {
+  to = module.vpc_dev.yandex_vpc_subnet.this
+  id = "e9b0pvbbfgntt0aqnonh"
+}
+
+
+$ terraform plan -out=import.tfplan
+Plan: 4 to import, 0 to add, 2 to change, 0 to destroy.
+Only changed field on both VMs: allow_stopping_for_update.
+
+$ terraform apply import.tfplan
+Apply complete! Resources: 4 imported, 0 added, 2 changed, 0 destroyed.
+
+$ terraform state list
+data.template_file.cloudinit
+yandex_vpc_security_group.ssh
+module.analytics_vm.data.yandex_compute_image.my_image
+module.analytics_vm.yandex_compute_instance.vm[0]
+module.marketing_vm.data.yandex_compute_image.my_image
+module.marketing_vm.yandex_compute_instance.vm[0]
+module.vpc_dev.yandex_vpc_network.this
+module.vpc_dev.yandex_vpc_subnet.this
+module.marketing_vm.yandex_compute_instance.vm[0]: Refreshing state... [id=fhmn81hkif0vgbbsv4ni]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.
+
+Exit code: 0

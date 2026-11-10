@@ -1,0 +1,16 @@
+$ ssh ubuntu@84.201.135.15
+Connected to marketing-0 as ubuntu
+................................................................................................................................................................................................................................................................status: done
+
+$ sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+active
+$ ssh ubuntu@84.201.133.45
+Connected to analytics-0 as ubuntu
+status: done
+
+$ sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+active

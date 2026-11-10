@@ -1,0 +1,4 @@
+Apply complete! Resources: 0 added, 0 changed, 5 destroyed.
+Terraform state list: empty.
+Verified via Yandex Cloud API: both VMs, both boot disks, subnet, network, and security group are absent.
+Task-local plans, state backups, provider cache and temporary files removed.

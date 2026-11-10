@@ -1,0 +1,22 @@
+data.template_file.cloudinit: Reading...
+data.template_file.cloudinit: Read complete after 0s [id=34e99683a62b025f5f255963e99b6289a2ce8f36063d897ed724c61913996ffc]
+module.marketing_vm.data.yandex_compute_image.my_image: Reading...
+module.analytics_vm.data.yandex_compute_image.my_image: Reading...
+module.vpc_dev.yandex_vpc_network.this: Refreshing state... [id=enpid4sup7u7g7t89hsb]
+module.marketing_vm.data.yandex_compute_image.my_image: Still reading... [00m10s elapsed]
+module.analytics_vm.data.yandex_compute_image.my_image: Still reading... [00m10s elapsed]
+module.analytics_vm.data.yandex_compute_image.my_image: Still reading... [00m20s elapsed]
+module.marketing_vm.data.yandex_compute_image.my_image: Still reading... [00m20s elapsed]
+module.analytics_vm.data.yandex_compute_image.my_image: Read complete after 20s [id=fd851pc48ancklbb404r]
+module.marketing_vm.data.yandex_compute_image.my_image: Read complete after 20s [id=fd851pc48ancklbb404r]
+module.vpc_dev.yandex_vpc_subnet.this: Refreshing state... [id=e9b0pvbbfgntt0aqnonh]
+yandex_vpc_security_group.ssh: Refreshing state... [id=enpdfdnhjruhkkhacoeg]
+module.analytics_vm.yandex_compute_instance.vm[0]: Refreshing state... [id=fhmifb0ejdjminkbviel]
+module.marketing_vm.yandex_compute_instance.vm[0]: Refreshing state... [id=fhmn81hkif0vgbbsv4ni]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.
+
+Exit code: 0

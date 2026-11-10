@@ -1,0 +1,9 @@
+$ terraform state list
+data.template_file.cloudinit
+yandex_vpc_security_group.ssh
+module.analytics_vm.data.yandex_compute_image.my_image
+module.analytics_vm.yandex_compute_instance.vm[0]
+module.marketing_vm.data.yandex_compute_image.my_image
+module.marketing_vm.yandex_compute_instance.vm[0]
+module.vpc_dev.yandex_vpc_network.this
+module.vpc_dev.yandex_vpc_subnet.this

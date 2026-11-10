@@ -1,0 +1,9 @@
+{
+  "terraform_version": "1.12.0",
+  "platform": "linux_amd64",
+  "provider_selections": {
+    "registry.terraform.io/hashicorp/template": "2.2.0",
+    "registry.terraform.io/yandex-cloud/yandex": "0.244.0"
+  },
+  "terraform_outdated": true
+}

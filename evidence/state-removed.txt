@@ -1,0 +1,12 @@
+$ terraform state rm module.vpc_dev module.marketing_vm module.analytics_vm
+Removed module.vpc_dev.yandex_vpc_network.this
+Removed module.vpc_dev.yandex_vpc_subnet.this
+Removed module.marketing_vm.data.yandex_compute_image.my_image
+Removed module.marketing_vm.yandex_compute_instance.vm[0]
+Removed module.analytics_vm.data.yandex_compute_image.my_image
+Removed module.analytics_vm.yandex_compute_instance.vm[0]
+Successfully removed 6 resource instance(s).
+
+$ terraform state list
+data.template_file.cloudinit
+yandex_vpc_security_group.ssh
